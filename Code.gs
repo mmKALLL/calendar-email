@@ -19,11 +19,15 @@
 
 "use strict";
 
-/*
-https://developers.google.com/apps-script/reference/calendar/calendar-app
-
-*/
+// https://developers.google.com/apps-script/reference/calendar/calendar-app
 
 
+function doGet() {
+  return HtmlService.createHtmlOutputFromFile('Index');
+}
+
+function getCalendar() {
+  // TODO: Fill in the method stub.
+}
 
 
