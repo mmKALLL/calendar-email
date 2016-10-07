@@ -1,10 +1,12 @@
-<html>
 <!DOCTYPE html>
+<html>
     <head>
         <meta charset="utf-8">
+        <base href="#" target="_top" />
         <title>Google Calendar Email Generation</title>
+         <!-- The style file's name ends in .html due to Google Apps Script's limitations. -->
         <style>
-            <?!= include("stylesheet.css"); ?>
+            <?!= include("stylesheet.html"); ?>
         </style>
     </head>
     
@@ -21,10 +23,11 @@
         
         By the way...
         
-        <a href="mailto:onecooldude@gmail.com?subject=Hey+Dude.+You're+Cool.&cc=anotherdude@gmail.com&bcc=invisibledude@gmail.com&body=Your+awesome+mes    sage+goes+here.%0D%0A%0D%0AThis+is+on+a+new+line.+Go+to+http%3A%2F%2Fwww.google.com%2F.">onecooldude@gmail.com</a>
-    
+        <a href="mailto:onecooldude@gmail.com?subject=Hey+Dude.+You're+Cool.&cc=anotherdude@gmail.com&bcc=invisibledude@gmail.com&body=Your+awesome+mes    sage+goes+here.%0D%0A%0D%0AThis+is+on+a+new+line.+Go+to+http%3A%2F%2Fwww.google.com%2F.">Email onecooldude@gmail.com and their friends with this link.</a>
+        
+         <!-- The style file's name ends in .html due to Google Apps Script's limitations. -->
         <script>
-            <?!= include("script.js"); ?>
+            <?!= include("script.html"); ?>
         </script>
     </body>
 </html>
