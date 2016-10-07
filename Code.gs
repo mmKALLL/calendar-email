@@ -23,7 +23,17 @@
 
 
 function doGet() {
-  return HtmlService.createHtmlOutputFromFile('Index');
+  return HtmlService.createTemplateFromFile('index')
+      .evaluate;
+}
+
+function include(filename) {
+  return HtmlService.createHtmlOutputFromFile(filename)
+      .getContent();
+}
+
+function log(text) {
+  Logger.log(text);
 }
 
 function getCalendar() {
